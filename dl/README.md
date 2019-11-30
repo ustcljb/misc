@@ -21,7 +21,7 @@ See [here](https://www.quora.com/What-does-co-adaptation-of-neurons-in-a-Neural-
 
 ## 3. What is perplexity in NLP?
 
-Overall, `The perplexity of whatever you're evaluating, on the data you're evaluating it on, sort of tells you "this thing is right about as often as an x-sided die would be."`, quoted from [here](https://planspace.org/2013/09/23/perplexity-what-it-is-and-what-yours-is/).
+Overall, the perplexity is just the exponential of the entropy.
 
 For a more detailed explanation, see [this artical](https://towardsdatascience.com/perplexity-intuition-and-derivation-105dd481c8f3).
 
