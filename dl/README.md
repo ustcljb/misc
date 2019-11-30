@@ -17,7 +17,7 @@ See [here](https://stackoverflow.com/questions/48549670/pooling-vs-pooling-over-
 
 When you build a neural network with certain number of neurons in its hidden layers, you ideally want each neuron to operate as an independent feature detector. Of two or more neurons begin to detect the same feature repeatedly (co-adaption), the network isn't utilizing its full capacity efficiently. It's wasting computational resources computing the activation for redundant neurons that are all doing the same thing.
 
-See [here](https://www.quora.com/What-does-co-adaptation-of-neurons-in-a-Neural-network-mean) and the [paper] (https://arxiv.org/pdf/1207.0580.pdf)
+See [here](https://www.quora.com/What-does-co-adaptation-of-neurons-in-a-Neural-network-mean) and the [paper](https://arxiv.org/pdf/1207.0580.pdf).
 
 ## 3. What is perplexity in NLP?
 
