@@ -36,3 +36,23 @@ or
 2    B  NaN
 ```
 However, if the dict contains large amount of keys, `.map` would be much faster.
+
+## 4. Issues when using pickle.load()
+
+The following error
+```python
+mydata = pickle.load(myfile, "rb")
+ValueError: unsupported pickle protocol: 3
+```
+is because the file was created using Python 3(which has the default protocol 3), while loaded using Python 2(which has the protocol 2).
+
+To solve this issue, the simplest and easiest approach will be to write a Python3 script that unpickles everything using protocol 3 and repickles it again using protocol 2. 
+```python
+pickle.dump(pickle.load(sys.stdin), sys.stdout, 2)
+```
+And then in Python 2:
+```python
+pickle.load(...) # This will work now in Python 2.
+```
+
+
