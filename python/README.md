@@ -55,4 +55,6 @@ And then in Python 2:
 pickle.load(...) # This will work now in Python 2.
 ```
 
+## 5. Difference between list.reverse() and list[::-1]
+list.reverse() reverses the list in-place, while list[::-1] gives a new list in reverse order.
 
